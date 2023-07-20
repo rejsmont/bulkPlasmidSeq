@@ -219,7 +219,7 @@ def loadReads(inputFiles, referenceFiles, outputDir, restriction_enzyme, restric
                                           
     elif os.path.isfile(inputFiles):
         #Checks if fastq (or fq) format 
-        if str(inputFiles).lower().endswith('.fastq') or str(inputFiles).lower.endswith('.fq'):
+        if str(inputFiles).lower().endswith('.fastq') or str(inputFiles).lower().endswith('.fq'):
             reads = inputFiles
         else:
             sys.exit('Error: Reads should be in .fastq (or .fq) format ')
